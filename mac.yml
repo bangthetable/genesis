@@ -8,6 +8,9 @@
 
   tasks:
 
+  - name: Install Homebrew Cask Community Collections
+    shell: ansible-galaxy collection install community.general
+    
   - name: Tap caskroom/versions for edge versions
     homebrew_tap:
       name: homebrew/cask-versions
