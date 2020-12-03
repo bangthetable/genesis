@@ -23,7 +23,7 @@
     when: networking_only == 'true'
 
   - name: Install common software
-    homebrew_cask:
+    community.general.homebrew_cask:
       name: ['google-chrome', 'firefox', 'slack', 'iterm2', 'sublime-text', 'alfred', '1password', 'docker-edge']
     when: networking_only != 'true'
 
